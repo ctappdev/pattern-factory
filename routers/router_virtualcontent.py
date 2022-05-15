@@ -1,7 +1,6 @@
-from models.model_virtualcontent import VirtualContent
-from services.service_virtual_content import do_virtual_content_transformation
+from models.model_virtualcontent import VirtualContentRequest
+from services.service_virtualcontent import do_virtualcontent_transformation
 from fastapi import APIRouter, Request, Body
-from pydantic import Json
 
 router = APIRouter(
     prefix="/virtualcontent",
@@ -13,6 +12,6 @@ router = APIRouter(
 @router.post("/")
 async def buy_virtual_content(
         request: Request,
-        parameters: VirtualContent = Body(...)
+        parameters: VirtualContentRequest = Body(...)
 ):
-    return await do_virtual_content_transformation(parameters)
+    return await do_virtualcontent_transformation(parameters)

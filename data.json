@@ -1,0 +1,70 @@
+-- Virtual Content
+
+--Group POS
+
+{
+  "detail": {
+    "store": 0,
+    "till": 0,
+    "retailer": "string",
+    "channel": "GPOS",
+    "payment_details": {
+      "trn_type": "VirtualContent",
+      "provider": 0,
+      "product": 0,
+      "amount": 0
+    }
+  }
+}
+
+--eCommerce
+
+{
+  "detail": {
+    "site_id": 0,
+    "retailer": "string",
+    "channel": "ECOM",
+    "payment_details": {
+      "trn_type": "VirtualContent",
+      "provider_no": 0,
+      "product_code": 0,
+      "amount": 0
+    }
+  }
+}
+
+
+--Bill Payment
+
+--Group POS
+
+{
+  "detail": {
+    "store": 0,
+    "till": 0,
+    "retailer": "string",
+    "channel": "GPOS",
+    "payment_details": {
+      "trn_type": "VirtualContent",
+      "provider": 0,
+      "product": 0,
+      "amount": 0
+    }
+  }
+}
+
+--eCommerce
+
+{
+  "detail": {
+    "site_id": 0,
+    "retailer": "string",
+    "channel": "ECOM",
+    "payment_details": {
+      "trn_type": "BillPayment",
+      "provider_no": 0,
+      "account_no": 0,
+      "amount": 0
+    }
+  }
+}
